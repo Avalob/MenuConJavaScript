@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú del día</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Opciones del menú del día</h1>
+
+        <div class="menu-item">
+            <select id="primer-plato">
+                <option value="0">Elegir primer plato</option>
+                <option value="3">Lentejas con chorizo (3 euros)</option>
+                <option value="2">Crema de calabaza (2 euros)</option>
+            </select>
+            <img id="img-primer-plato" src="">
+        </div>
+
+        <div class="menu-item">
+            <select id="segundo-plato">
+                <option value="0">Elegir segundo plato</option>
+                <option value="4">Escalope de pollo (4 euros)</option>
+                <option value="5">Lubina al horno (5 euros)</option>
+            </select>
+            <img id="img-segundo-plato" src="">
+        </div>
+
+        <div class="menu-item">
+            <select id="postre">
+                <option value="0">Elegir postre</option>
+                <option value="1">Flan de huevo (1 euro)</option>
+                <option value="2">Arroz con leche (2 euros)</option>
+            </select>
+            <img id="img-postre" src="">
+        </div>
+
+        <div class="descuento">
+            <input type="checkbox" id="descuento"> Consigue un 10% de descuento
+        </div>
+
+        <button id="btn-comer">¡A comer!</button>
+
+        <!-- El resultado del total solo aparecerá al hacer clic en el botón -->
+        <div id="total" style="display: none;">
+            <p>Total: <span id="total-amount">0</span> euros</p>
+        </div>
+    </div>
+
+    <script src="MenuDelDia.js"></script>
+</body>
+</html>
